@@ -34,5 +34,10 @@
   # https://devenv.sh/processes/
   processes.watch.exec = "dotnet watch";
 
+  services.postgres = {
+    enable = true;
+    package = pkgs.postgresql_16;
+  };
+
   # See full reference at https://devenv.sh/reference/options/
 }
